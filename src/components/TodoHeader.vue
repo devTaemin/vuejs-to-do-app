@@ -1,6 +1,8 @@
 <template>
     <header>
-        <div>TODO it!</div>
+        <div>
+            <h1>TODO it!</h1>
+        </div>
     </header>
 </template>
 
