@@ -23,7 +23,8 @@ export default ({
         addTodo() {
             if(this.newTodoItem !== ""){
                 var value = this.newTodoItem && this.newTodoItem.trim();
-                localStorage.setItem(value, value);
+                //localStorage.setItem(value, value);
+                this.$emit('addTodo', value);
                 this.clearInput();
             }
             //console.log(this.newTodoItem);
@@ -57,7 +58,7 @@ export default ({
     .addContainer {
         float: right;
         background: linear-gradient(to right, #6478FB, #8763FB);
-        display: inline-block;
+        /* display: inline-block; */
         width: 3rem;
         border-radius: 0 5px 5px 0;
     }
